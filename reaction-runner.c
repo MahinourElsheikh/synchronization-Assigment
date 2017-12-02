@@ -62,8 +62,11 @@ alarm_handler(int foo)
 int
 main(int argc, char** argv)
 {
+
 	struct reaction reaction;
+
 	reaction_init(&reaction);
+//	printf("\n \n \n main ");
 
 	if (argc != 2 || atoi(argv[1]) < 0 || atoi(argv[1]) > 100) {
 		fprintf(stderr, "usage: %s percentageOfHydrogenAtoms\n"

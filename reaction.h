@@ -3,6 +3,13 @@
 
 struct reaction {
 	// FILL ME IN
+    int O_num;
+    int H_num;
+    pthread_mutex_t *lock;
+    pthread_cond_t *condH;
+    pthread_cond_t *condO;
+
+
 };
 
 void reaction_init(struct reaction *reaction);
